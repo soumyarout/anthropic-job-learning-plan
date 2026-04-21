@@ -64,6 +64,26 @@
     }
     .skip-box strong { color: #4db89a; font-weight: 500; }
 
+    /* ── roadmap link ── */
+    .roadmap-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--color-bg-2);
+      border: 0.5px solid var(--color-border-2);
+      border-radius: var(--radius-md);
+      padding: 0.8rem 1.1rem;
+      margin-bottom: 1.25rem;
+      text-decoration: none;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .roadmap-link:hover { background: var(--color-bg-3); border-color: #3a3a5a; }
+    .roadmap-link-left { display: flex; flex-direction: column; gap: 2px; }
+    .roadmap-link-label { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; color: var(--color-muted); }
+    .roadmap-link-title { font-size: 13px; color: var(--color-text); font-weight: 500; }
+    .roadmap-link-arrow { font-size: 14px; color: var(--color-muted); flex-shrink: 0; }
+
     /* ── progress ── */
     .progress-bar-wrap {
       height: 2px;
@@ -226,6 +246,14 @@
 </div>
 
 <div class="skip-box"><strong>Background I'm building on (no need to revisit):</strong> Python, PyTorch, Transformers, Agentic AI, Tool use, MLOps, Cloud infra, Fine-tuning, LangChain, RAG, Multi-agent orchestration, LLM guardrails. The remaining gap: RL theory, PPO from scratch, RLHF internals, and research-mode habits.</div>
+
+<a href="rl_research_engineer_learning_roadmap.html" class="roadmap-link">
+  <div class="roadmap-link-left">
+    <span class="roadmap-link-label">GENERAL LEARNING PATH</span>
+    <span class="roadmap-link-title">RL Research Engineer — Full Roadmap (4 phases, ~2 years)</span>
+  </div>
+  <span class="roadmap-link-arrow">→</span>
+</a>
 
 <div class="progress-bar-wrap"><div class="progress-bar-fill" id="prog" style="width:4.7%"></div></div>
 
